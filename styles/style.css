@@ -1,209 +1,225 @@
-    * {
-        padding: 0;
-        margin: 0;
-    }
-    /* --------
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --------
 website font
 --------- */
-    
-    @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
-    /*------------- 
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+
+/*------------- 
 common styles 
 ----------*/
-    
-    body {
-        padding: 0;
-        margin: 0;
-        font-family: 'Bitter', serif;
-        background-color: #f3f1ff;
-    }
-    
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /*---------------
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bitter', serif;
+    background-color: #f3f1ff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*---------------
      header manu 
      -------------*/
-    
-    .manu-nav {
-        display: flex;
-        align-items: center;
-    }
-    
-    h1 {
-        color: white;
-        margin-left: 10px;
-    }
-    
-    .manu-bar {
-        width: 100%;
-    }
-    
-    span img {
-        width: 40.42px;
-        height: 51px;
-    }
-    
-    .manu-bar ul {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: #562EFF;
-        padding: 10px;
-    }
-    
-    .manu-bar ul li {
-        list-style-type: none;
-        display: inline-block;
-    }
-    
-    .manu-bar ul li a {
-        color: white;
-        text-decoration: none;
-        display: inline-block;
-        padding: 0 30px;
-    }
-    
-    .right-manu img {
-        width: 51px;
-        height: 51px;
-    }
-    /* top players */
-    
-    .container {
-        background-color: #fff;
-        width: 870px;
-        padding: 30px;
-        margin-top: 25px;
-        border-radius: 5px;
-    }
-    
-    .top-players {
-        margin-bottom: 30px;
-    }
-    
-    hr {
-        border: 1px solid #D1D1D1;
-        margin-bottom: 30px;
-    }
-    
-    .players {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-row-gap: 30px;
-    }
-    
-    .section-title {
-        color: #562EFF;
-        font-size: 24px;
-        margin-top: 3px;
-    }
-    
-    .player {
-        display: flex;
-    }
-    
-    .player img {
-        width: 56px;
-        height: 56px;
-    }
-    
-    .player-name {
-        margin-left: 16px;
-    }
-    /* -----------
+
+.manu-nav {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+.manu-bar {
+    width: 100%;
+}
+
+span img {
+    width: 40.42px;
+    height: 51px;
+}
+
+.manu-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #562EFF;
+    padding: 10px;
+}
+
+.manu-bar ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.manu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.right-manu img {
+    width: 51px;
+    height: 51px;
+}
+
+
+/* top players */
+
+.container {
+    background-color: #fff;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.top-players {
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+
+.player {
+    display: flex;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+}
+
+
+/* -----------
 top blogs
 ----------- */
-    
-    .blogs {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 30px;
-    }
-    
-    .blog {
-        display: flex;
-    }
-    
-    .blog img {
-        width: 177px;
-        height: 117px;
-    }
-    
-    .blog-details {
-        margin-left: 16px;
-    }
-    
-    .blog-details p {
-        color: #9F9F9F;
-    }
-    
-    .blog-details a {
-        text-decoration: none;
-        color: #562EFF;
-    }
-    /*------------------
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-details {
+    margin-left: 16px;
+    line-height: 30px;
+}
+
+.blog-details p {
+    color: #9F9F9F;
+}
+
+.blog-details a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+
+/*------------------
  latest courses 
  --------------*/
-    
-    .courses {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 20px;
-    }
-    
-    .course {
-        padding: 10px;
-        box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.123);
-        border-radius: 10px;
-    }
-    
-    .course img {
-        width: 100%;
-    }
-    
-    .course-author {
-        color: #ED6B4F;
-    }
-    
-    .course-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .rating {
-        color: #FFC014;
-        font-size: 20px;
-    }
-    
-    .rate,
-    .rating-point {
-        color: #AEAEAE;
-        font-size: 20px;
-    }
-    
-    .course-duration {
-        background-color: #FEE5DF;
-        color: #FF4A60;
-        padding: 10px;
-        border-radius: 25px;
-    }
-    /* ----------
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.course {
+    padding: 10px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.123);
+    border-radius: 10px;
+}
+
+.course img {
+    width: 100%;
+}
+
+.course-author {
+    color: #ED6B4F;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    color: #FFC014;
+    font-size: 20px;
+}
+
+.rate,
+.rating-point {
+    color: #AEAEAE;
+    font-size: 20px;
+}
+
+.course-duration {
+    background-color: #FEE5DF;
+    color: #FF4A60;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+/* ----------
     footer part
     -----------*/
-    
-    .footer {
-        text-align: center;
-        background-color: #111;
-        color: gray;
-        padding: 20px;
-    }
-    
-    .footer-title {
-        color: orange;
-    }
-    /*-----------------
+
+.footer {
+    text-align: center;
+    background-color: #111;
+    color: gray;
+    padding: 20px;
+}
+
+.footer-title {
+    color: orange;
+}
+
+
+/*-----------------
      media query
     ---------- */
